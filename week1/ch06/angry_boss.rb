@@ -4,3 +4,12 @@
 
 
 ### Your Code Here ###
+inputAnswer = 0
+
+print "WHAT DO YOU WANT? "
+
+inputAnswer = gets.chomp
+
+bossAnswer = inputAnswer.upcase
+
+print "WHADDYA MEAN YOU WANT #{bossAnswer}. YOU ARE FIRED IDIOT! "

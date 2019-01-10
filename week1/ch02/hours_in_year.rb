@@ -5,3 +5,22 @@
 
 
 ### Your Code Here ###
+#input variables
+year = 0
+
+#output variables
+hours = 0
+
+#Code
+
+print "What year would you like to calculate for? "
+year = gets.chomp #retrieves user input
+yearInt = year.to_i #converts string to int
+
+if ((yearInt % 4) == 0 && !((yearInt % 100) == 0 && (yearInt % 400) != 0))
+ hours = (31+29+31+30+31+30+31+31+30+31+30+31) * 24
+else
+  hours = (31+28+31+30+31+30+31+31+30+31+30+31) * 24
+
+end
+puts "There are #{hours} hours in the year #{year}."
